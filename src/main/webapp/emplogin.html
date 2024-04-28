@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>User Login</title>
+</head>
+<body>
+	<div  style="position: fixed;top:0px;">
+        <img src="./images/logo.jpg" alt="payana:travel with comfort" onclick="window.location.href = 'index.jsp'">
+    </div>
+       
+    <div class="container" style="position:relative;top:100px;margin-bottom:100px;">
+        <h2>Employee Login</h2>
+        <form method="post" action="EmpLoginServlet">
+            <label for="id">Id No.:</label>
+            <input type="text" id="id" name="id" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" ><br>
+
+            <input type="submit" value="Login" class="login-button">
+        </form>
+    </div>
+</body>
+</html>

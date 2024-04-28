@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>User Login</title>
+</head>
+<body>
+	<div  style="position: fixed;top:0px;">
+        <img src="./images/logo.jpg" alt="payana:travel with comfort" onclick="window.location.href = 'index.jsp'">
+    </div>
+       
+    <div class="container" style="margin-bottom: 50px;">
+        <h2>Add Bus</h2>
+        <form method="post" action="AddTripServlet">
+            <label for="rid"> Route Id No.:</label>
+            <input type="text" id="rid" name="rid" required><br>
+
+			<label for="bid"> Bus Id No.:</label>
+            <input type="text" id="bid" name="bid" required><br>
+
+			<label for="source">Source:</label>
+            <input type="text" id="source" name="source" required><br>
+
+            <label for="capacity">Destination:</label>
+            <input type="text" id="destination" name="destination" ><br>
+
+			<label for="date"> Date:</label>
+            <input type="date" id="date" name="date" required><br>
+
+			<label for="dtime"> Departure Time:</label>
+            <input type="time" id="dtime" name="dtime"><br>
+
+			<label for="atime">Arrival Time:</label>
+            <input type="time" id="atime" name="atime"><br>
+
+            <label for="fare">Fare:</label>
+            <input type="number" id="fare" name="fare" ><br>
+
+
+            <input type="submit" value="Submit" class="login-button">
+        </form>
+    </div>
+</body>
+</html>

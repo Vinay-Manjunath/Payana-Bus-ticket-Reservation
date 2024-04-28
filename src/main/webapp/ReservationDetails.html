@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>User Login</title>
+</head>
+<body>
+	<div  style="position: fixed;top:0px">
+        <img src="./images/logo.jpg" alt="payana:travel with comfort" onclick="window.location.href = 'index.jsp'">
+    </div>
+       
+    <div class="container" style="position:relative;top:100px;margin-bottom:100px;">
+        <h2>Reservation Details</h2>
+        <form method="post" action="ReservationOfBusServlet" >
+            <label for="route_id">Route Id:</label>
+            <input type="text" id="route_id" name="route_id" required><br>
+
+            <input type="submit" value="Submit" class="login-button">
+        </form>
+    </div>
+</body>
+</html>

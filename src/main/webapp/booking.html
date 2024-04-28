@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Bus Booking</title>
+</head>
+<body>
+    <div >
+        <img src="./images/logo.jpg" alt="payana:travel with comfort" onclick="window.location.href = 'index.jsp'">
+    </div>
+    
+    <div class="centered" style="position:relative;top:100px;margin-bottom:100px;">
+        <a href="login.html" class="login-button">Please Login Now</a>
+    </div>
+    
+    <div class="container">
+		
+        <h2>Bus Booking</h2>
+        <form action="BookingServlet" method="post">
+            <label for="source">Source:</label>
+            <input type="text" id="source" name="source" required><br>
+
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required><br>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br>
+
+            <input type="submit" value="Search Buses" class="login-button">
+        </form>
+    </div>
+    
+    </body>
+</html>

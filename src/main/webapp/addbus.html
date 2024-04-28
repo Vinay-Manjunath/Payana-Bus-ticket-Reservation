@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>User Login</title>
+</head>
+<body>
+	<div  style="position: fixed;top:0px;">
+        <img src="./images/logo.jpg" alt="payana:travel with comfort" onclick="window.location.href = 'index.jsp'">
+    </div>
+       
+    <div class="container" style="margin-bottom: 50px;">
+        <h2>Add Bus</h2>
+        <form method="post" action="AddBusServlet">
+            <label for="bid"> Bus Id No.:</label>
+            <input type="text" id="bid" name="bid" required><br>
+
+			<label for="type"> Bus Type:</label>
+            <input type="text" id="type" name="type"><br>
+
+			<label for="depot">Bus Depot No.:</label>
+            <input type="number" id="depot" name="depot" required><br>
+
+            <label for="capacity">Capacity:</label>
+            <input type="number" id="capacity" name="capacity" ><br>
+
+            <input type="submit" value="Submit" class="login-button">
+        </form>
+    </div>
+</body>
+</html>
